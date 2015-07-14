@@ -1,0 +1,7 @@
+build/*
+vendor/*
+.old
+tests/reports/*
+composer.phar
+composer.lock
+demo.php

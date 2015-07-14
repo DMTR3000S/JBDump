@@ -64,9 +64,9 @@ class plgSystemJBDump extends JPlugin
 
             // sorting (ASC)
             'sort'          => array(
-                'array'     => (int)$this->params->get('sort_array', false),
-                'object'    => (int)$this->params->get('sort_object', true),
-                'methods'   => (int)$this->params->get('sort_methods', true),
+                'array'   => (int)$this->params->get('sort_array', false),
+                'object'  => (int)$this->params->get('sort_object', true),
+                'methods' => (int)$this->params->get('sort_methods', true),
             ),
 
             // handlers
