@@ -1,7 +1,7 @@
 .idea
 build/*
 vendor/*
-.old
+.old/*
 tests/reports/*
 composer.phar
 composer.lock

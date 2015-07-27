@@ -1,5 +1,7 @@
 <?php
 
+use SmetDenis\JBDump\Debuger;
+
 /**
  * Alias for JBDump::i()->dump($var) with additions params
  * @param   mixed  $var   Variable
@@ -9,7 +11,7 @@
  */
 function jbdump($var = 'JBDump::variable is no set', $isDie = true, $name = '...')
 {
-    $_this = JBDump::i();
+    $_this = Debuger::i();
 
     if ($var != 'JBDump::variable is no set') {
 

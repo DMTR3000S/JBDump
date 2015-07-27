@@ -6,7 +6,7 @@
     "keywords"         : [
         "jbdump", "dump", "php", "dumper", "debug", "debugging", "pretty", "print", "print_r", "var_dump", "vars"
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "authors"          : [
         {
             "name" : "SmetDenis",
@@ -18,8 +18,10 @@
         "jdorn/sql-formatter": "dev-master"
     },
     "autoload"         : {
-        "files": [
-            "src/autoload.php"
-        ]
-    }
+        "files": ["resources/functions/jbdump.php"],
+        "psr-4": {
+            "SmetDenis\\JBDump\\": "src/"
+        }
+    },
+    "bin"              : ["bin/jbdump"]
 }
