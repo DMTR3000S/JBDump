@@ -18,14 +18,11 @@ namespace SmetDenis\JBDump;
  */
 class RenderHtml
 {
-
-
     /**
      * Current depth in current dumped object or array
      * @var integer
      */
     protected $_currentDepth = 0;
-
 
     /**
      * @param string $data
@@ -99,7 +96,6 @@ class RenderHtml
     {
         return $this->_currentDepth <= self::$_config['dump']['expandLevel'];
     }
-
 
 
     /**
@@ -219,7 +215,7 @@ class RenderHtml
                 ?>
             </ul>
         </div>
-    <?php
+        <?php
     }
 
     /**
@@ -236,7 +232,7 @@ class RenderHtml
                 (<span class="jbtype jbtype-null">NULL</span>)
             </div>
         </li>
-    <?php
+        <?php
     }
 
     /**
@@ -284,7 +280,6 @@ class RenderHtml
         $data = get_resource_type($data);
         $this->_renderNode('Resource', $name, $data);
     }
-
 
 
     /**
@@ -364,7 +359,7 @@ class RenderHtml
                 </div>
             <?php } ?>
         </li>
-    <?php
+        <?php
 
     }
 
@@ -390,7 +385,7 @@ class RenderHtml
                 $this->_vars($data, $isExpanded);
             } ?>
         </li>
-    <?php
+        <?php
     }
 
     /**
@@ -415,7 +410,7 @@ class RenderHtml
         <?php if ($isExpand) {
         $this->_vars($data, $isExpanded);
     } ?>
-    <?php
+        <?php
     }
 
     /**
@@ -438,7 +433,7 @@ class RenderHtml
             </div>
             <?php $this->_vars($this->_getFunction($data), $isExpanded); ?>
         </li>
-    <?php
+        <?php
     }
 
     /**
@@ -482,7 +477,7 @@ class RenderHtml
                 <span class="jbvalue"><?php echo $data; ?></span>
             </div>
         </li>
-    <?php
+        <?php
     }
 
 

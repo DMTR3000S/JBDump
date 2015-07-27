@@ -16,7 +16,7 @@ namespace SmetDenis\JBDump;
  * Class Error
  * @package SmetDenis\JBDump
  */
-class Debuger
+class Debugger
 {
     /**
      * Fix bug anti cycling destructor
@@ -36,39 +36,14 @@ class Debuger
     const DS = '/';
 
     /**
-     * Site url
-     * @var string
-     */
-    protected $_site = 'http://jbdump.org/';
-
-
-    /**
      * Constructor, set internal variables and self configuration
      * @param array $options Initialization parameters
      */
-    protected function __construct(array $options = array())
+    public function __construct(array $options = array())
     {
-        $this->setParams($options);
-
-        if (self::$_config['errors']['errorHandler']) {
-            set_error_handler(array($this, '_errorHandler'));
-        }
-
-        if (self::$_config['errors']['exceptionHandler']) {
-            set_exception_handler(array($this, '_exceptionHandler'));
-        }
-
-        $this->_start        = $this->_microtime();
-        $this->_bufferInfo[] = array(
-            'time'       => 0,
-            'timeDiff'   => 0,
-            'memory'     => self::_getMemory(),
-            'memoryDiff' => 0,
-            'label'      => 'jbdump::init',
-            'trace'      => '',
-        );
-
-        return $this;
+        // params
+        // error handlers
+        // profiler
     }
 
     /**

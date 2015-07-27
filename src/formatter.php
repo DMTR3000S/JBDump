@@ -13,10 +13,10 @@
 namespace SmetDenis\JBDump;
 
 /**
- * Class Logger
+ * Class Formatter
  * @package SmetDenis\JBDump
  */
-class Logger
+class Formatter
 {
 
     /**
@@ -71,7 +71,7 @@ class Logger
     }
 
     /**
-     * Convert filesize to formated string
+     * Convert file size to formatted string
      * @param   integer $bytes Count bytes
      * @return  string
      */

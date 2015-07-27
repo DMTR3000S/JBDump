@@ -16,7 +16,7 @@ namespace SmetDenis\JBDump;
  * Class Tool
  * @package SmetDenis\JBDump
  */
-class Tool
+class Variable
 {
     /**
      * @var \JBDump

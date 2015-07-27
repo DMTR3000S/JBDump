@@ -16,10 +16,8 @@ namespace SmetDenis\JBDump;
  * Class RenderCli
  * @package SmetDenis\JBDump
  */
-class RenderCli
+class RenderLite
 {
-
-
     /**
      * Dump render - Lite mode
      * @param mixed  $data
@@ -43,7 +41,7 @@ class RenderCli
             $printrOut = str_replace('] =&gt;', '] =>', $printrOut);
         }
 
-        $output   = array();
+        $output = array();
         if (!self::isCli()) {
             $output[] = '<pre>------------------------------' . PHP_EOL;
         }

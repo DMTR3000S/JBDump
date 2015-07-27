@@ -13,19 +13,14 @@
 namespace SmetDenis\JBDump;
 
 /**
- * Class Tool
+ * Class VarCurl
  * @package SmetDenis\JBDump
  */
-class Tool
+class VarCurl
 {
-    /**
-     * @var \JBDump
-     */
-    protected $jbdump = null;
-
-    public function __construct()
+    public function info($var)
     {
-        echo '111111';
+        return curl_getinfo($var);
     }
 
 }

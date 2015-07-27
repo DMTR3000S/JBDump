@@ -59,6 +59,20 @@ class Profiler
         'trace'  => array(),
     );
 
+    function __construct()
+    {
+        $this->_start        = $this->_microtime();
+        $this->_bufferInfo[] = array(
+            'time'       => 0,
+            'timeDiff'   => 0,
+            'memory'     => self::_getMemory(),
+            'memoryDiff' => 0,
+            'label'      => 'jbdump::init',
+            'trace'      => '',
+        );
+    }
+
+
     /**
      * Show current usage memory in filesize format
      * @return  JBDump

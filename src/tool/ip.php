@@ -22,9 +22,9 @@ class ToolIP extends Tool
      * Show client IP
      * @return  JBDump
      */
-    public static function ip()
+    public function exec()
     {
-        if (!self::isDebug()) {
+        if (!$this->isDebug()) {
             return false;
         }
 

@@ -1,0 +1,1 @@
+http://brandonwamboldt.github.io/utilphp/#get_current_url

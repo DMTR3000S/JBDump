@@ -16,7 +16,7 @@ namespace SmetDenis\JBDump;
  * Class ToolClasses
  * @package SmetDenis\JBDump
  */
-class ToolClasses extends Tool
+class ToolHash extends Tool
 {
     /**
      * Get all available hash from data

@@ -18,6 +18,17 @@ namespace SmetDenis\JBDump;
  */
 class Error
 {
+    function __construct()
+    {
+        if (self::$_config['errors']['errorHandler']) {
+            set_error_handler(array($this, '_errorHandler'));
+        }
+
+        if (self::$_config['errors']['exceptionHandler']) {
+            set_exception_handler(array($this, '_exceptionHandler'));
+        }
+    }
+
 
     /**
      * Force show PHP error messages

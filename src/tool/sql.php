@@ -16,7 +16,7 @@ namespace SmetDenis\JBDump;
  * Class ToolSession
  * @package SmetDenis\JBDump
  */
-class ToolSession extends Tool
+class ToolSql extends Tool
 {
     /**
      * Highlight SQL query

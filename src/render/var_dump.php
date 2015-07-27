@@ -46,6 +46,26 @@ class RenderVarDump
         $_this->_dumpRenderHtml($output, $varname . '::html', $params);
 
         return $_this;
+
+
+
+
+        
+        // neaten the newlines and indents
+        $cliColor = ini_get('xdebug.cli_color');
+        if (!$cliColor || $cliColor == 1) {
+            $output = preg_replace("/\s\=\>\n(\s+)/m", "] => ", $output);
+        } else {
+            $output = preg_replace("/(\x1B\[0m=\>\x1b\[0m)\n/m", "$1", $output); // color 2
+            $output = preg_replace("/(\x1B\[0m=\>\x1b\[0m)   /m", "$1", $output); // color 2
+        }
+
+        $output = preg_replace("/(' =\>)\n/m", "$1", $output); // color 2
+        $output = preg_replace("/(' =\>)     /m", "$1", $output); // color 2
+
+
+        echo $output;        
+        
     }
 
 

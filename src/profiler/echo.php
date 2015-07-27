@@ -13,10 +13,10 @@
 namespace SmetDenis\JBDump;
 
 /**
- * Class ToolClasses
+ * Class ProfilerEcho
  * @package SmetDenis\JBDump
  */
-class ToolClasses extends Tool
+class ProfilerEcho extends Tool
 {
     /**
      * Profile render - echo lite

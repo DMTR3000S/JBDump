@@ -16,7 +16,7 @@ namespace SmetDenis\JBDump;
  * Class ToolClasses
  * @package SmetDenis\JBDump
  */
-class ToolClasses extends Tool
+class ProfilerTable extends Tool
 {
     /**
      * Profiler render - table
